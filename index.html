@@ -34,7 +34,7 @@
             <li><a class="nav-list-item" href="">Contacts</a></li>
           </ul>
         </nav>
-        <button>
+        <button class="burder-btn" type="button" data-menu-open>
           <svg class="header-btn" width="24" height="24">
             <use href="./images/icons.svg#icon-solid_menu"></use>
           </svg>
@@ -54,13 +54,12 @@
           </ul>
         </address>
       </div>
-      <div class="menu">
-        <button type="button" class="menu-close-btn">
+      <div class="menu" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
           <svg class="menu-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <ul class="menu-list">
           <li>
             <a class="menu-list-item active" href="./index.html">Studio</a>
@@ -83,7 +82,6 @@
               </li>
             </ul>
           </address>
-
           <ul class="menu-soc-list">
             <li class="menu-soc-punkt">
               <a class="menu-soc-item" href="">
@@ -766,18 +764,24 @@
               name="user-privacy"
               value="true"
             />
-            <label for="user-privacy" class="modal-check-text"
-              ><span class="modal-check-span"
-                ><svg class="modal-check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-agree"></use></svg></span
-              >I accept the terms and conditions of the&nbsp;
-              <a class="privacy-policy" href="">Privacy Policy</a></label
-            >
+            <label for="user-privacy" class="modal-check-text">
+              <span class="modal-check-span">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-agree"></use>
+                </svg>
+              </span>
+              <div class="iaccept">
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href="">Privacy Policy</a>
+              </div>
+            </label>
           </div>
           <button class="btn modal-btn" type="button">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
